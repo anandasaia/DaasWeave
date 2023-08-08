@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Record Data</title>
+</head>
+<body>
+  <h1>ID</h1>
+  <p>Description</p>
+  <p>Wallet</p>
+  <p>Link</p>
+  <p>Tag</p>
+  
+  <div id="recordDetails"></div>
+  
+  <script>
+    async function fetchRecordData() {
+      const response = await fetch('http://localhost:3000/recordData'); // Change the URL to match your server endpoint
+      const records = await response.json();
+      
+      const recordDetailsDiv = document.getElementById('recordDetails');
+      for (const record of records) {
+        const recordElement = document.createElement('div');
+        recordElement.innerHTML = `
+          <h1>ID: ${record.id}</h1>
+          <p>Description: ${record.description}</p>
+          <p>Wallet: ${record.wallet}</p>
+          <p>Link: ${record.link}</p>
+          <p>Tag: ${record.tags}</p>
+          <hr>
+        `;
+        recordDetailsDiv.appendChild(recordElement);
+      }
+    }
+    
+    fetchRecordData();
+  </script>
+</body>
+</html>
