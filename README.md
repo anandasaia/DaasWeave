@@ -1,7 +1,7 @@
 
 # DaasWeave
 
-A marketplace for Datasets as atomic assets on Arweave
+A marketplace for Datasets as atomic assets on Arweave. Built on top of Atomic Asset Creator.
 
 ## Features
 
