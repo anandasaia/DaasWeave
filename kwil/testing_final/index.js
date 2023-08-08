@@ -11,7 +11,7 @@ const databaseName = "asset_records";
 const dbid = Utils.generateDBID(walletAddress, databaseName);
 
 const signer = new Wallet(
-  "33a7c97a75a891872eec2f5cdcc6df3f9edc2184e9f678cdbc8a59bb8d7535c1"
+  ""
 ); // Use your own private key here
 
 module.exports = {
