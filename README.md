@@ -14,7 +14,7 @@ A marketplace for Datasets as atomic assets on Arweave
 
 ## Usage
 
-1.  Run server.js in kwil/testing final folder using `node server.js`
+1.  Run server.js in kwil/testing final folder using `node server.js`(Only to see Kwil proxy server in action. Replace with your private keys and kwil db data to succesfully run it).
     
 2.  Go to DaaSWeaveUploader folder, run `yarn` followed by `yarn dev`
     
